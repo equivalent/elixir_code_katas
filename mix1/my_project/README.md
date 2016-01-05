@@ -27,5 +27,11 @@ iex
 h(MyProject)
 h(MyProject.publish)
 ```
+to install dependency 
+```
+vim my_project/mix.exs  # alter the `dep` with tupple { :blabla, github: 'bla/blabla' }
+mix deps.get 
 
+we've installed `ex_doc` . now we can do `mix docs` that will generate
+documentation in html
 
