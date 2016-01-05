@@ -1,20 +1,31 @@
 # MyProject
 
-**TODO: Add description**
+based on:
 
-## Installation
+* elixir sips 004
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add my_project to your list of dependencies in `mix.exs`:
+lesson about:
+* inclueds documentation
+* mix
+* how to compile to .beam
 
-        def deps do
-          [{:my_project, "~> 0.0.1"}]
-        end
+have a look at `lib/my_project.ex`
 
-  2. Ensure my_project is started before your application:
 
-        def application do
-          [applications: [:my_project]]
-        end
+```
+mix new my_project
+cd my_projcect
+
+vim lib/my_project.ex` # alterations
+
+elixirc lib/my_project.ex
+
+# that will create Elixir.MyProject.beam
+
+iex
+h(MyProject)
+h(MyProject.publish)
+```
+
 
